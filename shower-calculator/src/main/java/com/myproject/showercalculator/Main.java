@@ -12,6 +12,7 @@ public class Main {
 		if(gui.backLength != 0.0 && gui.sideLength != 0.0 && gui.height != 0.0) {
 			shower = new Shower(gui.sideLength, gui.backLength, gui.height);
 		}
+		
 	}
 
 }

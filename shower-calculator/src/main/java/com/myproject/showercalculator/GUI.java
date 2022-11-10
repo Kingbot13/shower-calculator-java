@@ -30,21 +30,42 @@ public class GUI implements ActionListener {
 		frame = new JFrame("Shower Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 500);
+		JLabel lLength = new JLabel("Tile Length");
 		tLength = new JTextField(2); // tile length text field
+		JLabel lWidth = new JLabel("Tile Width");
 		tWidth = new JTextField(2); // tile width text field
+		JLabel lThickness = new JLabel("Tile Thickness");
 		tThickness = new JTextField(4); // tile thickness text field
+		JLabel lCarton = new JLabel("Carton Size");
 		tCarton = new JTextField(4);
+		JLabel lPrice = new JLabel("Price");
 		tPrice = new JTextField(4);
+		JLabel lSide = new JLabel("Side");
 		tsSide = new JTextField(4);
+		JLabel lBack = new JLabel("Back");
 		tsBack = new JTextField(4);
+		JLabel lHeight = new JLabel("Height");
 		tsHeight = new JTextField(4);
 		button = new JButton("Submit");
 		
 		// add components to frame
 		frame.getContentPane().add(button); // adds button to frame
+		frame.getContentPane().add(lLength);
 		frame.getContentPane().add(tLength);
+		frame.getContentPane().add(lWidth);
 		frame.getContentPane().add(tWidth);
+		frame.getContentPane().add(lThickness);
 		frame.getContentPane().add(tThickness);
+		frame.getContentPane().add(lCarton);
+		frame.getContentPane().add(tCarton);
+		frame.getContentPane().add(lPrice);
+		frame.getContentPane().add(tPrice);
+		frame.getContentPane().add(lSide);
+		frame.getContentPane().add(tsSide);
+		frame.getContentPane().add(lBack);
+		frame.getContentPane().add(tsBack);
+		frame.getContentPane().add(lHeight);
+		frame.getContentPane().add(tsHeight);
 		frame.setVisible(true);
 		
 		button.addActionListener(this);
