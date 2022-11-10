@@ -7,7 +7,7 @@ public class Shower {
 	
 	Shower(double side, double back, double h) {
 		this.sideLength = side;
-		this.backLength = side;
+		this.backLength = back;
 		this.height = h;
 	}
 	
