@@ -29,7 +29,8 @@ public class GUI implements ActionListener {
 	public GUI() {
 		frame = new JFrame("Shower Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500, 500);
+//		frame.setSize(500, 500);
+		
 		JLabel lLength = new JLabel("Tile Length");
 		tLength = new JTextField(2); // tile length text field
 		JLabel lWidth = new JLabel("Tile Width");
@@ -49,24 +50,25 @@ public class GUI implements ActionListener {
 		button = new JButton("Submit");
 		
 		// add components to frame
-		frame.getContentPane().add(button); // adds button to frame
-		frame.getContentPane().add(lLength);
-		frame.getContentPane().add(tLength);
-		frame.getContentPane().add(lWidth);
-		frame.getContentPane().add(tWidth);
-		frame.getContentPane().add(lThickness);
-		frame.getContentPane().add(tThickness);
-		frame.getContentPane().add(lCarton);
-		frame.getContentPane().add(tCarton);
-		frame.getContentPane().add(lPrice);
-		frame.getContentPane().add(tPrice);
-		frame.getContentPane().add(lSide);
-		frame.getContentPane().add(tsSide);
-		frame.getContentPane().add(lBack);
-		frame.getContentPane().add(tsBack);
-		frame.getContentPane().add(lHeight);
-		frame.getContentPane().add(tsHeight);
+		frame.add(button); // adds button to frame
+		frame.add(lLength);
+		frame.add(tLength);
+		frame.add(lWidth);
+		frame.add(tWidth);
+		frame.add(lThickness);
+		frame.add(tThickness);
+		frame.add(lCarton);
+		frame.add(tCarton);
+		frame.add(lPrice);
+		frame.add(tPrice);
+		frame.add(lSide);
+		frame.add(tsSide);
+		frame.add(lBack);
+		frame.add(tsBack);
+		frame.add(lHeight);
+		frame.add(tsHeight);
 		frame.setVisible(true);
+		frame.pack();
 		
 		button.addActionListener(this);
 	}
