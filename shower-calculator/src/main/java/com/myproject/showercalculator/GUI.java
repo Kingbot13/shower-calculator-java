@@ -27,10 +27,12 @@ public class GUI implements ActionListener {
 	
 	
 	public GUI() {
+		// create frame
 		frame = new JFrame("Shower Calculator");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.setSize(500, 500);
+		frame.setLayout(new FlowLayout());
 		
+		// create components
 		JLabel lLength = new JLabel("Tile Length");
 		tLength = new JTextField(2); // tile length text field
 		JLabel lWidth = new JLabel("Tile Width");
@@ -50,7 +52,7 @@ public class GUI implements ActionListener {
 		button = new JButton("Submit");
 		
 		// add components to frame
-		frame.add(button); // adds button to frame
+		frame.add(button); 
 		frame.add(lLength);
 		frame.add(tLength);
 		frame.add(lWidth);
@@ -67,8 +69,8 @@ public class GUI implements ActionListener {
 		frame.add(tsBack);
 		frame.add(lHeight);
 		frame.add(tsHeight);
-		frame.setVisible(true);
 		frame.pack();
+		frame.setVisible(true);
 		
 		button.addActionListener(this);
 	}
